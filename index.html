@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot de Discord de Classificação de Imagens com Deep Learning</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        p{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Bot de Discord de Classificação de Imagens com Deep Learning
+        <h3>Autores: Brandão Nersissian, Henrique Arnaud Santana Silva, Leonardo Hideki kawamoto e Matheus Zanivan Andrade</h3>
+    </h1>
+    <h2>
+        Resumo
+    </h2>
+    <p>
+        Muito tem se falado acerca do avanço tecnológico, e quando pensamos nesse assunto não conseguimos deixar de pensar em inteligência artificial. 
+ 
+ A inteligência artificial está presente no nosso cotidiano e nos mais diversos setores da industria tanto na nossa casa em um aspirador de pó inteligente ou em sites com algoritmos de complexidade altíssima para saber o que o usuário esta interessado.
+ 
+ Redes neurais apresentam características que auxiliam nesse quesito, cada vez mais melhorando a capacidade da inteligência das maquinas, tentando cada vez mais ser parecido com o cérebro humano. Assim, essa pesquisa tem o objetivo de apresentar a maneira que uma máquina pensa até ela conseguir interpretar e dizer o que uma imagem está indicando.
+    </p>
+    <h2>
+        Introdução
+    </h2>
+    <p>
+     O objetivo desse projeto é criar um modelo que aprende a classificar imagens a partir de um dataset. Para isso será feito um treinamento do modelo usando rede convolucional para identificar as imagens. Utilizamos a convolucional, CNN (Convolutional Neural Network).
+
+Essa rede neural, diferente das outras, possui camadas convolucionais, e essas camadas conseguem encontrar padrões nos inputs, utilizando filtros, que vão ficando mais complexos na parte do reconhecimento conforme vão avançando nas camadas. Podem começar extraindo coisas básicas como curvas e pontas, depois uma combinação de pontas e curvas, e depois avançando para objetos, faces, etc. Por isso esse tipo de rede é amplamente utilizado para reconhecimento de imagens.
+Primeiro criamos o modelo Carregamos as imagens fornecidas pelo dataset, e atraves da biblioteca keras transformamos ela em um tipo da dado aceito.
+E implementamos um modelo "Sequencial" que basicamente é uma sequencia linear de camadas em série. E utilizamos 2 funções de ativação, a Softmax que é basicamente uma função que converte um vetor de numeros em um vetor de probablidade, e a probabilidade de cada vetor é proporcional a escala de cada valor desse vetor, e nas redes CNN ela é usada no final afim de testar a confiabilidade do modelo usado. E utilizamos a função ReLU (Rectified Linear Unit), que basicamente vai dar um output do input diretamente se for positivo, se for negativo da um input de 0.
+Aplicamos a função fitness e utizamos 25 epochs, que são a quantidade de ciclos de treinamento.
+Ao final salvamos o modelo e testamos com os dados dos CSVs de train e Test, e criamos um novo modelo testado.
+E o último é a criação de um bot do discord para podermos interagir fazendo as previsões com imagens. Enviamos uma foto pro bot e ele retorna o resultado da previsão.
+    </p>
+    <h2>
+        Considerações finais
+    </h2>
+    <p>
+        
+    </p>
+    <h2>
+        Referências
+    </h2>
+    <p>
+        
+    </p>
+</body>
+</html>
+
